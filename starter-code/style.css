@@ -1,3 +1,13 @@
+:root{
+    --main-font:'red hat display';
+    --textbody-color : #87879D;
+}
+
+
+
+p{
+    margin: 0px;
+}
 body{
     margin: 0px;
 }
@@ -9,24 +19,161 @@ body{
     height: 100vh;
     align-items: center;
     justify-content: flex-start;
-    background-color: rgb(255, 233, 233);
 }
 
 main{
     display: flex;
     flex-direction: column;
-    background-color: yellow;
-    height: 600px;
+    height: 450px;
     width: 100vw;
     justify-content: flex-start;
     align-items: center;
     padding-top: 80px;
+    min-width: 1000px; 
+}
+h1{
+    font-family: 'red hat display';
+    font-weight: 900;
+    font-size: 3.4rem;
+    line-height: 110%;
+    margin: 0px;
+    color: #28283D;
+    width: 380px;
+}
+
+.logo{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subtitle{
+    display: flex;
+    font-family: 'red hat display';
+    font-weight: 400;
+    font-size: 1rem;
+    color: #87879D;
+}
+
+.sub-hero{
+        width: 380px;
+}
+
+.sub-feature{
+        width: 550px;
 }
 
 .hero{
     display: flex;
-
+    width: 102vw;
+    justify-content: space-between;
 }
 
 .heroimg{
 }
+
+.mainhero{
+text-align: center;
+padding: 80px 80px;
+display: flex;
+flex-direction: column;
+box-sizing: border-box;
+gap: 32px;
+justify-content: center;
+align-items: center;
+}
+
+.btn1{
+    border-style: none;
+   padding: 16px 40px;
+   border-radius: 100px;
+   background-color: #4D96A9;
+}
+
+.btn2{
+    border-style: none;
+   padding: 16px 40px;
+   border-radius: 100px;
+      background-color: #855FB1;
+}
+
+button{
+     font-family: 'red hat display';
+    font-weight: 800;
+    font-size: 1rem;
+    color: white;
+}
+
+.btncontainer{
+    display: flex;
+    gap: 12px;
+}
+
+.div1{
+    font-family:  var(--main-font);
+    color: var(--textbody-color);
+    font-weight: 900;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    align-content: center;
+    border: 1px solid #D1D1DF;
+    border-radius: 100px;
+}
+
+.line{
+    background-color:#D1D1DF;
+    width: 1px;
+    height: 80px;
+}
+
+.divider{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+}
+
+.squareimage{
+    display: flex;
+    gap: 32px
+    ;
+}
+
+.sq1{
+    height: 256px;
+    width: 256px;
+    border-radius: 24px;
+    background-color: var(--textbody-color);
+}
+
+.section-feature{
+    text-align: center;
+    justify-items: center;
+    margin: 20px 0px;
+}
+
+.section-feature > h2{
+    width: 450px;
+    line-height: 110%;
+    margin: 20px;
+    color: #28283D;
+}
+
+.section-feature > h4{
+    font-family: var(--main-font);
+    font-size: 16px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-top: 60px;
+    color: #4D96A9;
+}
+
+h2{
+    font-family: var(--main-font);
+    font-weight: 800;
+    font-size: 40px;
+}
+
