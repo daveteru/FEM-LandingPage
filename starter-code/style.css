@@ -16,21 +16,11 @@ body{
     display: flex;
     flex-direction: column;
     width: 100vw;
-    height: 100vh;
     align-items: center;
     justify-content: flex-start;
 }
 
-main{
-    display: flex;
-    flex-direction: column;
-    height: 450px;
-    width: 100vw;
-    justify-content: flex-start;
-    align-items: center;
-    padding-top: 80px;
-    min-width: 1000px; 
-}
+
 h1{
     font-family: 'red hat display';
     font-weight: 900;
@@ -46,6 +36,8 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 80px;
+    z-index: 2;
 }
 
 .subtitle{
@@ -64,16 +56,38 @@ h1{
         width: 550px;
 }
 
-.hero{
+main{
     display: flex;
-    width: 102vw;
-    justify-content: space-between;
+    flex-direction: column;
+    height: 60vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+    box-sizing: border-box;
 }
 
-.heroimg{
+
+.hero{
+    z-index: 1;
+    position: relative;
+    display: flex;
+    width: 102vw;
+    height: 700px;
+    justify-content: space-between;
+    align-items: center;
+}
+.circle{
+    max-height: 30vh;
+}
+
+.herowrap{
+
 }
 
 .mainhero{
+z-index: 2;
+position: absolute;
 text-align: center;
 padding: 80px 80px;
 display: flex;
@@ -177,3 +191,31 @@ h2{
     font-size: 40px;
 }
 
+@media (max-width:868px) {
+
+    body{
+        background: #ff000050 ;
+    }
+
+    .mainhero{
+    position: relative;
+    }
+    .hero{
+    display: flex;
+    position: relative;
+    width: 102vw;
+    height: 700px;
+    justify-content: space-between;
+    align-items: center;
+    }   
+    main{
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+    box-sizing: border-box;
+    }
+}
