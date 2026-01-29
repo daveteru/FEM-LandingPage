@@ -52,7 +52,8 @@ h1{
 }
 
 .sub-feature{
-        width: 550px;
+        width: 90%;
+        max-width: 550px;
 }
 
 main{
@@ -78,7 +79,9 @@ main{
 }
 .circle{
     min-height: 30%;
-    height: 350px;
+    max-height: 350px;
+    width: auto;
+    align-self: stretch;
 }
 
 
@@ -190,7 +193,8 @@ button{
 
 
 .section-feature > h2{
-    width: 450px;
+    width: 90%;
+    max-width: 450px;
     line-height: 110%;
     margin: 20px;
     color: #28283D;
@@ -240,6 +244,7 @@ footer{
     .circle{
     min-height: 30%;
     height: 325px;
+    align-self: stretch;
 }
 
     .mainhero{
@@ -285,12 +290,19 @@ footer{
     h2{
         margin: 0px ;
     }
+
+    .squareimage{
+    display: flex;
+    gap: 24px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: center;
+}
 }
 
 @media (max-width:375px) {
-    body{
-        background-color: rgb(205, 141, 141);
-    }
+
     .circle{
     min-height: 30%;
     height: 150px;
@@ -300,5 +312,16 @@ h1{
 }
 .btncontainer{
     flex-direction: column;
+}
+
+.squareimage{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: center;
 }
 }
